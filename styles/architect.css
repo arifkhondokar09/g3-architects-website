@@ -2,8 +2,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-body{font-family: "Work Sans", serif;
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
     font-optical-sizing: auto;
-    font-weight:400;
+    font-weight: 400;
     font-style: normal;
+  }
+
+ header{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+nav h3 { color: rgba(19, 19, 19, 1);}
+
+ nav{display: flex;
+justify-content: space-around;
+}
+
+nav> ul{ list-style: none;
+    display: flex;
+  
+}
+ nav ul li {
+    margin-right: 20px;
+
+
+}
+
+nav li> a {
+    text-decoration: none;
+    color: rgba(66, 66, 66, 1);
+}
+
+  
+
+/* navigation banner styles */
+
+.banner{
+    max-width: 870px;
+    /* height: 375; */
+    margin: 0 auto;
+}
+
+
+.banner-title{
+font-size: 4rem;
+font-weight:bold ;
+color: rgba(19, 19, 19, 1);
+
+text-align: center;
+
+margin-bottom: 40px;
+
+}
+
+.banner-description{
+    font-size: 1rem;
+font-weight:500 ;
+color:rgba(114, 114, 114, 1);
+
+text-align: center;
+
+}
+
+.banner-button{
+    font-size: 1.25rem;
+font-weight:600 ;
+color:rgba(255, 255, 255, 1);
+
+text-align: center;
+background-color: rgba(255, 144, 14, 1);
+padding: 20px 25px;
+
+border-radius: 8px;
+margin-left:23vw;
+margin-top: 25px;
+border: none;
+
+}
+
+.banner-image img{ width: 100%;}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    .banner-button{
+        margin-left:28vw;}
+
+        nav{
+            flex-direction: column
+        }
+        nav h3 {
+        
+            text-align: center;
+        }
+    
+            
+        nav> ul {
+            list-style: none;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+    
+
+}
+
+
+
+@media screen and (min-width:576.01px)and (max-width:992px){
+    .banner-button{
+        margin-left:38vw;
+    }
+    nav{
+        flex-direction: column
+    }
+     nav h3 {
+        
+        text-align: center;
+    }
+
+        
+    nav> ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
 }
